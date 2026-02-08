@@ -1,0 +1,5 @@
+# API key – do not commit
+.env
+.venv/
+__pycache__/
+*.pyc

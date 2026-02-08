@@ -1,0 +1,324 @@
+[
+  {
+    "is_significant": false,
+    "event_type": "other",
+    "ad_copy": "The players are lining up, and so should you - for a slice of MVP Pizza!",
+    "promo_suggestion": "Free delivery on all orders over $20",
+    "social_hashtags": [
+      "#MVPizza",
+      "#FootballFrenzy",
+      "#PizzaLove"
+    ],
+    "urgency": "low",
+    "source_event": {
+      "start_sec": 0,
+      "end_sec": 5,
+      "window": "0:00 \u2013 0:05",
+      "analysis": "There are no significant events that change the course of the match in this clip, as the play has not yet begun. The video shows a pre-snap formation with analytical lines highlighting player positions."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "tackle",
+    "ad_copy": "Tackled by hunger? We've got the perfect block: buy one pizza, get one 20% off!",
+    "promo_suggestion": "20% off second pizza with purchase of one at regular price",
+    "social_hashtags": [
+      "#MVPizza",
+      "#NFLDeals",
+      "#TackleYourHunger"
+    ],
+    "urgency": "high",
+    "source_event": {
+      "start_sec": 5,
+      "end_sec": 10,
+      "window": "0:05 \u2013 0:10",
+      "analysis": "Here are the significant events in this clip:\n\n*   **0:07 - Running back (orange #22) is tackled by defensive player Atkins (blue #90), ending the offensive play.**"
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "big_play",
+    "ad_copy": "Matt Milano is putting the pressure on, just like our chefs put the pressure on to deliver the perfect pie! ",
+    "promo_suggestion": "Get 10% off our MVP Combo meal for the next 10 minutes",
+    "social_hashtags": [
+      "#MVPizza",
+      "#BillsMafia",
+      "#NFL"
+    ],
+    "urgency": "high",
+    "source_event": {
+      "start_sec": 10,
+      "end_sec": 15,
+      "window": "0:10 \u2013 0:15",
+      "analysis": "Here are the significant events in the clip:\n\n*   **0:11 - Defensive assignment highlighted:** The commentator points out Buffalo Bills #50 (Matt Milano)'s specific role in the upcoming play, stating he's \"supposed to scrape over the top and take the quarterback,\" indicating a potential defensive scheme to pressure the quarterback.\n*   **0:12 - Play begins (snap):** The ball is snapped, initiating the offensive play by the Broncos and defensive action by the Bills.\n*   **0:13 - Buffalo Bills #50 (Matt Milano) engages blocker and pursues quarterback:** Following his described assignment, Milano makes contact with a Broncos offensive lineman (#77) and moves into the backfield towards the Broncos quarterback (#10), actively executing the defensive pressure scheme."
+    }
+  },
+  {
+    "is_significant": false,
+    "event_type": "other",
+    "ad_copy": "Adjusting to the pace of the game, just like our fresh dough adjusting to the perfect crust",
+    "promo_suggestion": "Free garlic knots with every large pizza order",
+    "social_hashtags": [
+      "#MVPizza",
+      "#NFLSunday",
+      "#FootballFood"
+    ],
+    "urgency": "low",
+    "source_event": {
+      "start_sec": 20,
+      "end_sec": 25,
+      "window": "0:20 \u2013 0:25",
+      "analysis": "There are no significant events such as knockdowns, fouls, goals, cards, penalties, major chances, injuries/stoppages, tactical changes, or substitutions shown in this clip. The clip primarily shows a player on the field adjusting his helmet between plays, with a CBS Sports graphic appearing briefly."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "big_play",
+    "ad_copy": "Great design play on the field, great design on our pizzas too! ",
+    "promo_suggestion": "Get 10% off your next order with code RUN10",
+    "social_hashtags": [
+      "#MVPizza",
+      "#NFL",
+      "#TouchdownDeals"
+    ],
+    "urgency": "high",
+    "source_event": {
+      "start_sec": 15,
+      "end_sec": 20,
+      "window": "0:15 \u2013 0:20",
+      "analysis": "00:15-00:17 - Successful run play by #28 (Orange), who is tackled after what commentators describe as a \"great design play,\" indicating a significant gain in yardage for the offense."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "tackle",
+    "ad_copy": "Tackled by hunger? Get a slice of our MVP Pizza to tackle your cravings!",
+    "promo_suggestion": "10% off all orders for the next 10 minutes",
+    "social_hashtags": [
+      "#MVPPizza",
+      "#NFL",
+      "#FootballFood"
+    ],
+    "urgency": "medium",
+    "source_event": {
+      "start_sec": 25,
+      "end_sec": 30,
+      "window": "0:25 \u2013 0:30",
+      "analysis": "This clip shows a standard offensive play in American football, a handoff to a running back who is tackled. There are no significant events that change the course of the match within the 0:25-0:30 timestamp, such as scores, fouls, cards, injuries, or major chances."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "big_play",
+    "ad_copy": "The Broncos are making some big gains, and so can you with 10% off all large pizzas at MVP Pizza!",
+    "promo_suggestion": "10% off all large pizzas",
+    "social_hashtags": [
+      "#MVPPizza",
+      "#BroncosNation",
+      "#NFL"
+    ],
+    "urgency": "medium",
+    "source_event": {
+      "start_sec": 30,
+      "end_sec": 35,
+      "window": "0:30 \u2013 0:35",
+      "analysis": "There are no events in this clip that significantly change the course of the match, as per the types of events requested (knockdowns, fouls, goals, cards, penalties, major chances, injuries/stoppages, or pivotal moments). The clip shows a standard run play by Broncos #31 resulting in positive yardage, but it is not a high-impact or game-altering event."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "tackle",
+    "ad_copy": "The Broncos just got tackled, but you don't have to - tackle your hunger with MVP Pizza!",
+    "promo_suggestion": "Buy one pizza, get one 50% off on all orders over $20",
+    "social_hashtags": [
+      "#MVPPizza",
+      "#NFL",
+      "#TackleYourHunger"
+    ],
+    "urgency": "high",
+    "source_event": {
+      "start_sec": 35,
+      "end_sec": 40,
+      "window": "0:35 \u2013 0:40",
+      "analysis": "00:35 - Player #12 (Broncos, orange jersey) is tackled by a Bills player (blue jersey).\n00:37 - Following the tackle, two players (Broncos #12 and a Bills player) are on the ground, and the down changes from 1st & 10 to 2nd Down."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "sack",
+    "ad_copy": "Sack attack! Get a slice of the action with 10% off all large pizzas",
+    "promo_suggestion": "10% off large pizzas for the next hour",
+    "social_hashtags": [
+      "#MVPizza",
+      "#NFL",
+      "#SackAttack"
+    ],
+    "urgency": "high",
+    "source_event": {
+      "start_sec": 45,
+      "end_sec": 50,
+      "window": "0:45 \u2013 0:50",
+      "analysis": "00:49 - Player #57 (Bills) sacks the quarterback #10 (Broncos)."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "tackle",
+    "ad_copy": "Taron Johnson just tackled the competition, now tackle your hunger with MVP Pizza!",
+    "promo_suggestion": "15% off all orders for the next 15 minutes",
+    "social_hashtags": [
+      "#MVPPizza",
+      "#NFL",
+      "#BuffaloBills"
+    ],
+    "urgency": "high",
+    "source_event": {
+      "start_sec": 40,
+      "end_sec": 45,
+      "window": "0:40 \u2013 0:45",
+      "analysis": "00:40 - Tackle of a Denver Broncos rookie by Taron Johnson of the Buffalo Bills, at the 21-yard line."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "big_play",
+    "ad_copy": "Defense is delivering, and so are we! Get 10% off all orders with code DEFENSE10",
+    "promo_suggestion": "10% off all orders with code DEFENSE10",
+    "social_hashtags": [
+      "#BillsMafia",
+      "#MVPizza",
+      "#NFL"
+    ],
+    "urgency": "high",
+    "source_event": {
+      "start_sec": 50,
+      "end_sec": 55,
+      "window": "0:50 \u2013 0:55",
+      "analysis": "Here's a significant event from the clip:\n\n00:53 - Pass defensed by #98 (Buffalo Bills)."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "big_play",
+    "ad_copy": "Walker's catching fire! Get a slice of the action with 10% off all orders at MVP Pizza",
+    "promo_suggestion": "10% off all orders",
+    "social_hashtags": [
+      "#BroncosCountry",
+      "#MVPizzaDeals",
+      "#NFL"
+    ],
+    "urgency": "high",
+    "source_event": {
+      "start_sec": 55,
+      "end_sec": 60,
+      "window": "0:55 \u2013 1:00",
+      "analysis": "Here are the significant events in the clip:\n\n*   **0:57** - Completed pass caught by #12 Dion Walker (Broncos). He secures the ball after it was in the air.\n*   **0:58** - #12 Dion Walker (Broncos) evades an attempted tackle by #24 Bishop (Bills) and continues to run with the ball."
+    }
+  },
+  {
+    "is_significant": false,
+    "event_type": "other",
+    "ad_copy": "The players are lining up, and so should you - for a delicious MVP Pizza!",
+    "promo_suggestion": "Get 10% off your next order with code LINEUP10",
+    "social_hashtags": [
+      "#MVPPizza",
+      "#NFLSunday"
+    ],
+    "urgency": "low",
+    "source_event": {
+      "start_sec": 65,
+      "end_sec": 70,
+      "window": "1:05 \u2013 1:10",
+      "analysis": "This clip does not contain any significant events that change the course of the match. It primarily shows a close-up of a player (Bo Nix) and then a wide shot of the teams lining up before a play begins."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "tackle",
+    "ad_copy": "Tackled by hunger? We've got the tackle-breaking deals! Get 10% off your next order at MVP Pizza",
+    "promo_suggestion": "10% off all orders",
+    "social_hashtags": [
+      "#MVPizza",
+      "#NFL",
+      "#TackleHunger"
+    ],
+    "urgency": "high",
+    "source_event": {
+      "start_sec": 60,
+      "end_sec": 65,
+      "window": "1:00 \u2013 1:05",
+      "analysis": "Here are the significant events from the clip within the specified timeframe:\n\n*   **01:01 - Tackle:** A player in an orange uniform (Denver Broncos) is tackled by multiple Buffalo Bills defenders (including Lewis #39 and Bishop #24), concluding a play.\n*   **01:02 - Game State Update:** The scoreboard appears, showing the current game status: Score 0-0, 2nd Down & 4 yards to go, 1st Quarter, 10:32 remaining. This reflects the outcome of the previous play and updates the match's current situation."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "tackle",
+    "ad_copy": "Just like the Broncos' run was stopped, our burger deals will stop you in your tracks! ",
+    "promo_suggestion": "Buy one burger, get one 20% off for the next hour",
+    "social_hashtags": [
+      "#NFL",
+      "#BurgerLove",
+      "#FootballFrenzy"
+    ],
+    "urgency": "high",
+    "source_event": {
+      "start_sec": 70,
+      "end_sec": 75,
+      "window": "1:10 \u2013 1:15",
+      "analysis": "01:13 - Denver Broncos player #24 (running back) is tackled by multiple Buffalo Bills defenders after a run play."
+    }
+  },
+  {
+    "is_significant": true,
+    "event_type": "tackle",
+    "ad_copy": "The Bills just tackled the competition, and we're tackling your hunger with 10% off all burgers!",
+    "promo_suggestion": "10% off all burgers for the next hour",
+    "social_hashtags": [
+      "#NFL",
+      "#BillsVsBroncos",
+      "#BurgerLove"
+    ],
+    "urgency": "high",
+    "source_event": {
+      "start_sec": 75,
+      "end_sec": 80,
+      "window": "1:15 \u2013 1:20",
+      "analysis": "Based on the video clip (01:15\u201301:20), the following significant event occurs:\n\n*   **01:16** - Tackle of Broncos' #10 (the ball carrier) by multiple Bills players, ending the running play."
+    }
+  },
+  {
+    "is_significant": false,
+    "event_type": "other",
+    "ad_copy": "Third and one? More like third and hungry! ",
+    "promo_suggestion": "Buy one burger, get one 10% off for the next hour",
+    "social_hashtags": [
+      "#ThirdAndOne",
+      "#BurgerLove",
+      "#FootballFrenzy"
+    ],
+    "urgency": "low",
+    "source_event": {
+      "start_sec": 80,
+      "end_sec": 85,
+      "window": "1:20 \u2013 1:25",
+      "analysis": "No significant events changing the course of the match (like knockdowns, fouls, goals, cards, penalties, major chances, injuries/stoppages, or pivotal moments) occur within the 01:20-01:25 timestamp of this clip. The clip shows players milling around between plays, with the commentators mentioning an upcoming \"third and one.\""
+    }
+  },
+  {
+    "is_significant": false,
+    "event_type": "other",
+    "ad_copy": "Time to take a break from the action, just like the players! Refuel with our juicy burgers",
+    "promo_suggestion": "10% off all burgers during halftime",
+    "social_hashtags": [
+      "#BurgerBreak",
+      "#NFLHunger"
+    ],
+    "urgency": "low",
+    "source_event": {
+      "start_sec": 85,
+      "end_sec": 90,
+      "window": "1:25 \u2013 1:30",
+      "analysis": "There are no significant events that change the course of the match (such as knockdowns, fouls, goals, cards, penalties, major chances, injuries/stoppages, or pivotal moments) visible in the provided video segment from 01:25 to 01:30. The players are shown standing on the field between plays while a commentator speaks."
+    }
+  }
+]
