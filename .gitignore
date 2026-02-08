@@ -4,3 +4,14 @@
 .venv/
 __pycache__/
 *.pyc
+
+# Videos and large binaries (do not push to GitHub)
+*.mp4
+*.webm
+*.mov
+*.avi
+*.mkv
+*.m4v
+uploaded_video.mp4
+test.mp4
+WhatsApp*
