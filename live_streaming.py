@@ -13,11 +13,23 @@ from contextlib import aclosing
 from pathlib import Path
 from typing import AsyncIterator, Optional
 
+import os
+
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
 load_dotenv(Path(__file__).resolve().parent / ".env")
+
+
+def _gemini_api_key() -> str:
+    key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
+    if not key:
+        raise ValueError(
+            "Missing Gemini API key. Set GOOGLE_API_KEY or GEMINI_API_KEY in .env or environment. "
+            "Get a key at https://aistudio.google.com/apikey"
+        )
+    return key
 
 # Optional: play model's audio (24 kHz 16-bit PCM from Live API)
 def _play_audio_pcm(data: bytes, sample_rate: int = 24000) -> None:
@@ -89,6 +101,7 @@ async def run_live_session(
     """
     # Live API is on v1alpha. Native audio model requires AUDIO; we get text via transcription.
     client = genai.Client(
+        api_key=_gemini_api_key(),
         http_options=types.HttpOptions(api_version="v1alpha"),
     )
     modalities = response_modalities or ["AUDIO"]
@@ -179,6 +192,7 @@ async def run_live_session_video(
     """
     # Same model/config as audio: AUDIO + transcription (native audio model rejects TEXT for video).
     client = genai.Client(
+        api_key=_gemini_api_key(),
         http_options=types.HttpOptions(api_version="v1alpha"),
     )
     modalities = response_modalities or ["AUDIO"]

@@ -4,6 +4,7 @@ in a given time window. Uses Gemini 2.5 Flash with native video clipping and str
 Used by the React app via the API.
 """
 import json
+import os
 import subprocess
 import time
 from pathlib import Path
@@ -15,6 +16,17 @@ from google.genai import types
 
 # Load .env from project root so GOOGLE_API_KEY (or GEMINI_API_KEY) can be set there
 load_dotenv(Path(__file__).resolve().parent / ".env")
+
+
+def _gemini_api_key() -> str:
+    key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
+    if not key:
+        raise ValueError(
+            "Missing Gemini API key. Set GOOGLE_API_KEY or GEMINI_API_KEY in .env or environment. "
+            "Get a key at https://aistudio.google.com/apikey"
+        )
+    return key
+
 
 # Gemini 2.5 Flash has stronger video understanding and supports video_metadata clipping
 VIDEO_MODEL = "models/gemini-2.5-flash"
@@ -96,7 +108,7 @@ def _build_video_content(
 
 def analyze_video(video_uri: str, start_time: Union[str, int], end_time: Union[str, int]) -> str:
     """Run Gemini video understanding once and return the full analysis text."""
-    client = genai.Client()
+    client = genai.Client(api_key=_gemini_api_key())
     response = client.models.generate_content(
         model=VIDEO_MODEL,
         contents=_build_video_content(video_uri, start_time, end_time),
@@ -106,7 +118,7 @@ def analyze_video(video_uri: str, start_time: Union[str, int], end_time: Union[s
 
 def analyze_video_stream(video_uri: str, start_time: Union[str, int], end_time: Union[str, int]):
     """Stream Gemini video understanding response chunks for live updates."""
-    client = genai.Client()
+    client = genai.Client(api_key=_gemini_api_key())
     stream = client.models.generate_content_stream(
         model=VIDEO_MODEL,
         contents=_build_video_content(video_uri, start_time, end_time),
@@ -128,7 +140,7 @@ def get_video_duration(video_path: str) -> float:
 
 def upload_video(video_path: str) -> str:
     """Upload a local video file to Gemini and return its URI."""
-    client = genai.Client()
+    client = genai.Client(api_key=_gemini_api_key())
     uploaded = client.files.upload(file=video_path)
     # Wait until the file is fully processed
     while uploaded.state.name == "PROCESSING":
