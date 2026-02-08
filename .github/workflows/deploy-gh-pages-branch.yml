@@ -1,0 +1,38 @@
+# Alternative deploy: push built app to gh-pages branch.
+# Use this if "GitHub Actions" deploy-pages gives 404.
+# In repo Settings → Pages, set Source to "Deploy from a branch", Branch: gh-pages, / (root).
+name: Deploy to gh-pages branch
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: app-react/package-lock.json
+
+      - name: Install and build
+        run: |
+          cd app-react
+          npm ci
+          npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: app-react/dist
+          force_orphan: true
